@@ -32,3 +32,45 @@ java Main
 
 ## Flujo de trabajo en Git
 Cada integrante trabajó en ramas propias (`feature-...`), con commits individuales y pull requests aprobados por el compañero antes del merge.
+
+
+## Diagrama de clases
+
+```mermaid
+classDiagram
+    class Criatura {
+        <<abstract>>
+        -String nombre
+        -int salud
+        -int fuerza
+        +atacar(Criatura objetivo) void
+        +defender(int daño) void
+        +estaViva() boolean
+    }
+
+    class Dragon {
+        -String escamas
+        +atacar(Criatura objetivo) void
+        +defender(int daño) void
+        +getEscamas() String
+    }
+
+    class Mago {
+        -String hechizos
+        +atacar(Criatura objetivo) void
+        +defender(int daño) void
+        +getHechizos() String
+    }
+
+    class Guerrero {
+        -String arma
+        +atacar(Criatura objetivo) void
+        +defender(int daño) void
+        +getArma() String
+    }
+
+    Criatura <|-- Dragon
+    Criatura <|-- Mago
+    Criatura <|-- Guerrero
+```
+
