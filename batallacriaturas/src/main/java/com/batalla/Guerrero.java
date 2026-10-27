@@ -1,3 +1,5 @@
+package com.batalla;
+
 /**
  * Guerrero: ataca con su arma (daño = fuerza)
  * y se defiende bloqueando con el escudo, que absorbe parte del daño.

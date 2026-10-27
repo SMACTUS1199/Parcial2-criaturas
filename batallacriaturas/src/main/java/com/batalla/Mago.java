@@ -1,4 +1,6 @@
-/**
+package com.batalla;
+
+/*
  * Mago: ataca con hechizos (daño = fuerza)
  * y se defiende con una barrera mágica que reduce el daño un 30%.
  */
